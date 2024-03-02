@@ -1,0 +1,46 @@
+.popup_image{
+    background: rgba(0,0,0,0.9);
+}
+
+.popup_image .cross, .card{
+cursor: pointer;
+}
+@media (max-width: 1427px)
+{
+.cards
+{
+columns: 5;
+width: calc(100% - 40px);
+}
+}
+@media (max-width: 1200px)
+{
+.cards
+{
+columns: 4;
+}
+}
+
+@media (max-width: 1000px)
+{
+.cards
+{
+columns: 3;
+}
+}
+
+@media (max-width: 786px)
+{
+.cards
+{
+columns: 2;
+}
+}
+
+@media (max-width: 480px)
+{
+.cards
+{
+columns: 1;
+}
+}

@@ -1,0 +1,73 @@
+<% include ./partials/header.ejs %>
+<% include ./partials/show_link.ejs %>
+
+<div class="w-full min-h-screen bg-white px-10 text-black pt-28">
+    <div class="cards flex flex-wrap gap-10">
+
+        <% user.posts.forEach(function(elem) {%>
+
+            <div class=" card w-32 rounded-lg">
+                <div class=" w-full h-40 bg-zinc-500 rounded-lg overflow-hidden">
+                    <img class="w-full h-full object-cover hover:opacity-90" src="/images/uploads/<%= elem.image %>"  alt="">
+                </div>
+                <h5 class="title mt-2 py-2 text-sm text-center overflow-hidden"> <%= elem.title %> </h5>
+                <h6 class="desc mt-2 text-sm text-center hidden"><%= elem.description %></h6>
+            </div>
+            
+        <% }) %>
+
+        
+    </div>
+</div>
+ 
+
+
+<div class="popup_image fixed top-0 left-0 h-full w-full z-50 text-white hidden">
+
+    <span class="cross absolute top-10 right-10 text-5xl font-thin z-50 ">&times;</span>
+
+    <div class="container absolute h-full w-full inline-flex flex-col justify-center items-center">
+
+        <img class=" h-3/4 max-w-full object-cover z-50" src="images\uploads\1496432e-97cd-4b21-b837-8e8fb167129e.jpg" alt="">
+
+        <div class="title z-50 my-2">what's up</div>
+
+        <div class="des z-50 my-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eius?</div>
+        
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".card").forEach(card => {
+            card.onclick = () => {
+                // Show the popup
+                document.querySelector('.popup_image').style.display = "block";
+                
+                // Get the information from the clicked card
+                let imageSrc = card.querySelector('img').getAttribute('src');
+                let title = card.querySelector('.title').innerText;
+                let description = card.querySelector('.desc').innerText;
+
+                // Populate the popup with information from the card
+                document.querySelector('.container img').src = imageSrc;
+                document.querySelector('.container .title').innerText = title;
+                document.querySelector('.container .des').innerText = description;
+            }
+        });
+
+        // Close the popup when the close button is clicked
+        document.querySelector('.popup_image .cross').onclick = () => {
+            document.querySelector('.popup_image').style.display = "none";
+        }
+    });
+</script>
+
+
+
+
+
+
+
+<% include ./partials/footer.ejs %>

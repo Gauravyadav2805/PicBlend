@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Picblend</title>
+  <link rel="icon" href="./images/picblend-blue.png" type="image/x-icon">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  
+
+  <!-- Navbar -->
+
+<%  if(nav === true){ %>
+
+  <div class="mt-0 w-full px-10 py-3 flex justify-between bg-white items-center fixed z-10">
+    <a href="/feed" class="logost flex justify-between items-center">
+      <img src="./images/picblend-blue.png" class="h-8 mr-1" alt="">
+    <img src="./images/picblend.png" class="h-4 mx-2" alt="">
+    </a>
+    <div class="flex gap-10 items-center">
+      <a href="/profile">Profile</a>
+      <a href="/feed">Feed</a>
+      <a class="px-3 py-2 bg-blue-600 text-white rounded-full font-semibold" href="/logout">Logout</a>
+    </div>
+  </div>
+
+<% } %>
+
+
+
