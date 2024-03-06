@@ -1,13 +1,25 @@
-<!-- PICBLEND-->
+# PicBlend
+<div style="flex h-2/3 justify-center items-center ">
+  <img src="https://example.com/your-image.png" alt="Description of the image"> </div>
+![Feed Page](public\images\first_page.png)
+[https://picblend.onrender.com](https://picblend.onrender.com)
 
-/ login and register screen
-/feed page with fidderent pins
-/save/:pinid - sae karenge pin ko kisi board me
-/delete/:pinid - delete a pin from a board
-/logout
-/edit
-/upload
+PicBlend offers a sleek design that invites users into a visually captivating space where creativity flourishes. Its easy-to-useinterface enables seamless navigation, allowing users to effortlessly sign in, create posts, and explore a vibrant feed of captivating images. With meticulous attention to detail, PicBlend ensures a delightful user experience, making it the go-to destination for sharing and discovering stunning visuals.
 
-<!-- Install Required Dependencies -->
-npm install express passport passport-local multer mongoose express-session connect-flash
+## Tech Stack
+
+- **Frontend**: EJS, HTML, Tailwind CSS, JavaScript
+- **Backend**: Express.js, Node.js
+- **Database**: MongoDB
+
+## Features
+
+- **Sign in/Log in**: Users can create accounts and log in securely.
+- **Create Post**: Users can create posts, sharing their blended images with the community.
+- **Feed of all Users**: A feed displays posts from all users, providing a platform for sharing and discovery.
+
+## Flowchart
+
+![flowchart outlining the structure](public\images\data_flow_picblend.png)
+
 
