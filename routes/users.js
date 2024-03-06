@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/PicBlend_project")
+// mongoose.connect("mongodb://127.0.0.1:27017/PicBlend_project")
+mongoose.connect("mongodb+srv://Admin:O1234@picblend.jnkdmd4.mongodb.net/")
+
 const plm = require("passport-local-mongoose");
 const { stringify } = require('uuid');
 const { array } = require('./multer');
