@@ -1,7 +1,8 @@
 # PicBlend
 <div style="flex h-2/3 justify-center items-center ">
-  <img src="https://example.com/your-image.png" alt="Description of the image"> </div>
-![Feed Page](public\images\first_page.png)
+  <img src="https://github.com/Gauravyadav2805/PicBlend/blob/main/public/images/picblend_3.png"> </div>
+![Feed Page](https://github.com/Gauravyadav2805/PicBlend/blob/main/public/images/picblend_3.png)
+
 [https://picblend.onrender.com](https://picblend.onrender.com)
 
 PicBlend offers a sleek design that invites users into a visually captivating space where creativity flourishes. Its easy-to-useinterface enables seamless navigation, allowing users to effortlessly sign in, create posts, and explore a vibrant feed of captivating images. With meticulous attention to detail, PicBlend ensures a delightful user experience, making it the go-to destination for sharing and discovering stunning visuals.
