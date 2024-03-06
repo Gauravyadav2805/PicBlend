@@ -1,6 +1,20 @@
 const mongoose = require('mongoose');
 // mongoose.connect("mongodb://127.0.0.1:27017/PicBlend_project")
-mongoose.connect("mongodb+srv://Admin:O1234@picblend.jnkdmd4.mongodb.net/")
+
+const url = process.env.DATABASE;
+
+// console.log(url);
+
+mongoose.connect(url, {
+  // userCreateIndex: true,
+  useNewUrlParser: true, 
+  useUnifiedTopology: true, 
+  // useFindAndModify: false
+}).then(()=> {
+  console.log("Connect to database")
+}).catch((err)=> {
+  console.log("Error to connect database", err);
+})
 
 const plm = require("passport-local-mongoose");
 const { stringify } = require('uuid');
