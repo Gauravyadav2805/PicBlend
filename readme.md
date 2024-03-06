@@ -1,7 +1,10 @@
 # PicBlend
-<div style="flex h-2/3 justify-center items-center ">
+<div style="flex w-1/3  justify-center items-center ">
   <img src="https://github.com/Gauravyadav2805/PicBlend/blob/main/public/images/picblend_3.png"> </div>
 ![Feed Page](https://github.com/Gauravyadav2805/PicBlend/blob/main/public/images/picblend_3.png)
+
+<div style="flex w-full justify-center items-center ">
+  <img src="https://github.com/Gauravyadav2805/PicBlend/blob/main/public/images/first_page.png"> </div>
 
 [https://picblend.onrender.com](https://picblend.onrender.com)
 
@@ -21,6 +24,7 @@ PicBlend offers a sleek design that invites users into a visually captivating sp
 
 ## Flowchart
 
-![flowchart outlining the structure](public\images\data_flow_picblend.png)
+<div style="flex w-full justify-center items-center ">
+  <img src="https://github.com/Gauravyadav2805/PicBlend/blob/main/public/images/data_flow_picblend.png"> </div>
 
 
