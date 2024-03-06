@@ -1,7 +1,5 @@
 # PicBlend
-<div style="flex w-1/3 width= justify-center items-center ">
-  <img src="https://github.com/Gauravyadav2805/PicBlend/blob/main/public/images/picblend_3.png" style="width:20%"> 
-  </div>
+
 
 <br>
 <br>
@@ -34,4 +32,10 @@ PicBlend offers a sleek design that invites users into a visually captivating sp
 <div style="flex w-full justify-center items-center ">
   <img src="https://github.com/Gauravyadav2805/PicBlend/blob/main/public/images/data_flow_picblend.png"> </div>
 
+## installation and setup instructions
+1. installation: `npm install`
+2. In the project directory, you can run: `node ./bin/www`
 
+Runs the app in the development mode.\
+Open [http://localhost:10000](http://localhost:1000) to view it in your browser.
+The page will reload when you make changes.
